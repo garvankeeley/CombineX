@@ -25,6 +25,10 @@ targets:
       - target: CXUtility_${platform}
       - target: CXNamespace_${platform}
       - target: CombineX_${platform}
+  CXCompatible:
+    templates: [Framework]
+    dependencies:
+      - target: CXNamespace_${platform}
 targetTemplates:
   Framework:
     type: framework
